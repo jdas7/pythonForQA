@@ -46,7 +46,7 @@ print(type(data_dictionary), data_dictionary)
 print(id(data_dictionary))
 
 # concatenation
-print(data_string + ", " + "My age is:", data_integer)
+print(data_string + ", " + "My age is:", data_integer, "fin: " + str(data_integer))
 
 num1 = "5"
 num2 = "4"
