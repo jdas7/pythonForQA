@@ -1,5 +1,5 @@
 # function isinstance
-my_variable = "perro"
+my_variable = "dog"
 
 if isinstance(my_variable, int):
     print("the result is True")
@@ -7,22 +7,22 @@ else:
     print("the result is False")
 
 # logic operators
-edad = 27
-tiene_trabajo = True
-es_estudiante = False
+age = 27
+has_work = True
+is_student = False
 global_age_of_experience = 5
 
 
-def validacion(age_of_experience=None):
-    if age_of_experience < 10 and tiene_trabajo and not es_estudiante:
-        print("es un adulto con poca experiencia pero con trabajo y no estudia")
+def validation(age_of_experience=None):
+    if age_of_experience < 10 and has_work and not is_student:
+        print("is an adult with little experience but with a job and not in education")
     else:
-        print("el man tiene experiencia")
+        print("the man has experience")
 
 
-if edad > 18 and tiene_trabajo and not es_estudiante:
-    print("es un adulto con trabajo y no estudia ")
-    # llamar funcion
-    validacion(global_age_of_experience)
+if age > 18 and has_work and not is_student:
+    print("is a working adult and does not study")
+    # call function
+    validation(global_age_of_experience)
 else:
     print("fin")
