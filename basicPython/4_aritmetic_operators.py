@@ -1,3 +1,6 @@
+from math import pi
+
+
 num1 = 3
 num2 = 2
 # sum
@@ -20,3 +23,6 @@ print(f'Result residue division (module): {module}')
 # exponent
 exponent = num1 ** num2
 print(f'Result exponent: {exponent}')
+
+x = pi
+print(f'the number pi is: {x}')

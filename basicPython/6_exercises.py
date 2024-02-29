@@ -21,9 +21,25 @@ value = int(input('type the value: '))
 minimum_value = 0
 value_maximum = 5
 
-within_Range = value >= minimum_value and value <= value_maximum
+within_Range = minimum_value <= value <= value_maximum
 
 if within_Range:
     print(f'Value {value} is within range')
 else:
     print(f'Value {value} is out of range')
+
+# verify Admin
+
+name = str(input("Ingrese su nombre: "))
+age = int(input("Ingrese su edad: "))
+
+adult = 18
+
+if name == "Admin" and age >= adult:
+    print("Tiene acceso de administrador")
+elif name != "Admin" and age >= adult:
+    print("Tiene acceso de user")
+elif name != "Admin" and age <= adult:
+    print("No tiene acceso, es joven aun")
+else:
+    print("No tiene acceso")
